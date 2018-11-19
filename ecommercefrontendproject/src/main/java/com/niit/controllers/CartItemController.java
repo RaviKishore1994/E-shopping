@@ -133,9 +133,9 @@ private CustomerService customerService;
 			cartItemService.removeCartItem(cartItem.getCartId());
 		}
 		
-		session.setAttribute("cartSize", 0);
-		m.addAttribute("cartItems", cartItems);
 		m.addAttribute("customerOrder", customerOrder);
+		m.addAttribute("cartItems", cartItems);
+		session.setAttribute("cartSize", 0);
 		return "orderDetails";
 	}
 }

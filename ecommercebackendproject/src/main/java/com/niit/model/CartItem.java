@@ -15,7 +15,6 @@ public class CartItem {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int cartId;
 	@ManyToOne
-	@JoinColumn(name="product_id")
 	private Product product;
 	@ManyToOne
 	private User user;

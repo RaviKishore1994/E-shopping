@@ -10,7 +10,7 @@
 <body>
 <div class="container">
 <center>
-<img src="<c:url value='/resources/images/${productAttr.id}.png'></c:url>" height="640px" width="1000px"></center>
+<img src="<c:url value='/resources/images/${productAttr.id}.jpg'></c:url>" height="640px" width="1000px"></center>
 <br><br><br>
 <table align="center" border="1" class="table table-sm">
 <tbody>

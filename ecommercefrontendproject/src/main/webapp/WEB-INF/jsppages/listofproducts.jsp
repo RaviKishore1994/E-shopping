@@ -14,7 +14,7 @@ $(document).ready(function()
 		{
 			var searchCondition = '${searchCondition}'
 			$('.table').DataTable({
-				"lengthMenu":[[5,10,-1],[5,10,"All"]],
+				"lengthMenu":[[3,10,-1],[3,10,"All"]],
 				"oSearch":{
 				"sSearch":searchCondition
 				}
@@ -34,7 +34,7 @@ $(document).ready(function()
 
 <tbody>
 <c:forEach items="${product }" var="p">
-<tr><td> <img src="<c:url value='/resources/images/${p.id}.png'></c:url>" height="150px" width="250px"></td><td><font color="black"><c:out value="${p.productname}"></c:out></font></td><%-- <td><font color="white"><c:out value="${p.productdesc}"></c:out></font></td><td><font color="white"><c:out value="${p.quantity}"></c:out></font></td> --%><td><font color="black"><c:out value="${p.price}"></c:out></font></td>
+<tr><td> <img src="<c:url value='/resources/images/${p.id}.jpg'></c:url>" height="150px" width="250px"></td><td><font color="black"><c:out value="${p.productname}"></c:out></font></td><%-- <td><font color="white"><c:out value="${p.productdesc}"></c:out></font></td><td><font color="white"><c:out value="${p.quantity}"></c:out></font></td> --%><td><font color="black"><c:out value="${p.price}"></c:out></font></td>
 <td><font color="black"><c:out value="${p.category.categoryname}"></c:out></td>
 <td>
 <a href="<c:url value='/all/getproducts?id=${p.id}'></c:url>"><span class="glyphicon glyphicon-info-sign"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;

@@ -15,8 +15,8 @@
 <span style="color:white">${loginError}</span><br>
 <form action="<c:url value='/j_spring_security_check'></c:url>" method="post">
 <table class="table table">
-<tr><td>EMAIL_ID</td><td><input type="text" name="j_username"></td>
-<tr><td>PASSWORD</td><td><input type="password" name="j_password"></td>
+<tr><td><font color="white">EMAIL_ID</td><td><input type="text" name="j_username"></td>
+<tr><td><font color="white">PASSWORD</td><td><input type="password" name="j_password"></td>
 <tr><td></td><td><input type="submit" value="LOGIN"/></td></tr>
 </table>
 </form>

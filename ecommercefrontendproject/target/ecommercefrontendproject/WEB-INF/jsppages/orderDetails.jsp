@@ -63,7 +63,7 @@ ${customerOrder.user.customer.billingaddress.zipcode}
 <tbody>
 <c:forEach var="cartItem" items="${cartItems}">
 <tr>
-<c:url value="/resources/images/$(cartItem.product.id).png" var="imgUrl"></c:url>
+<c:url value="/resources/images/$(cartItem.product.id).jpg" var="imgUrl"></c:url>
 <td><img src="${imgUrl}" height="50px" width="50px"/></td>
 <td class="col-md-9"><em>${cartItem.product.productname}</em></td>
 <td class="col-md-1" style="text-align:center">${cartItem.quantity}</td>
